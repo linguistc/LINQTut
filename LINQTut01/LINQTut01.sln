@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalProgramming", "FunctionalProgramming\FunctionalProgramming.csproj", "{6CEDD27E-175D-49CC-BA6B-5A7F1F8D70B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADlegate", "CADlegate\CADlegate.csproj", "{2C7278D8-33A7-44B5-BC0C-E6A40FCC7A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CEDD27E-175D-49CC-BA6B-5A7F1F8D70B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEDD27E-175D-49CC-BA6B-5A7F1F8D70B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEDD27E-175D-49CC-BA6B-5A7F1F8D70B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEDD27E-175D-49CC-BA6B-5A7F1F8D70B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7278D8-33A7-44B5-BC0C-E6A40FCC7A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7278D8-33A7-44B5-BC0C-E6A40FCC7A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7278D8-33A7-44B5-BC0C-E6A40FCC7A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7278D8-33A7-44B5-BC0C-E6A40FCC7A98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C190D0A-82EB-4B89-9EE2-805C9C64AD48}
+	EndGlobalSection
+EndGlobal
