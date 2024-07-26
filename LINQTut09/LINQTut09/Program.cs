@@ -1,9 +1,10 @@
 ﻿
+using LINQTut09;
 using LINQTut09.Shared;
 using System.ComponentModel.DataAnnotations;
 
-//RunJoin();
-//RunJoinQuerySyntax();
+RunJoin();
+RunJoinQuerySyntax();
 
 RunGroupJoin();
 RunGroupJoinQuerySyntax();
@@ -15,14 +16,14 @@ void RunJoin()
 
     var query = emps.Join(deps, e => e.DepartmentId,
         d => d.Id,
-        (e, d) => new
+        (e, d) => new EmployeeDto
         {
-            e.FullName,
-            d.Name
+            FullName = e.FullName,
+            Department = d.Name
         });
 
     foreach (var item in query)
-        Console.WriteLine($"{item.FullName} [{item.Name}]");
+        Console.WriteLine($"{item.FullName} [{item.Department}]");
 }
 
 void RunJoinQuerySyntax()
@@ -33,11 +34,14 @@ void RunJoinQuerySyntax()
     var query = from e in emps
                 join d in deps
                 on e.DepartmentId equals d.Id
-                select new {e.FullName, d.Name};
+                select new EmployeeDto {
+                    FullName = e.FullName,
+                    Department = d.Name
+                };
 
 
     foreach (var item in query)
-        Console.WriteLine($"{item.FullName} [{item.Name}]");
+        Console.WriteLine($"{item.FullName} [{item.Department}]");
 }
 
 void RunGroupJoin()
@@ -46,10 +50,10 @@ void RunGroupJoin()
     var deps = Repository.LoadDepartment();
 
     var query = deps.GroupJoin(emps, d => d.Id, e => e.DepartmentId,
-        (d, e) => new
+        (d, emps) => new Group
         {
             Department = d.Name,
-            Employees = e
+            Employees = emps.Select(e => e.FullName).ToList()
         });
 
     foreach (var group in query)
@@ -58,9 +62,9 @@ void RunGroupJoin()
         Console.WriteLine($"++++++++++++++++++++++ {group.Department} +++++++++++++++++++");
         Console.WriteLine();
 
-        foreach (var item in group.Employees)
+        foreach (var name in group.Employees)
         {
-            Console.WriteLine($"{item.FullName}");
+            Console.WriteLine($"\t{name}");
         }
 
     }
@@ -86,7 +90,7 @@ void RunGroupJoinQuerySyntax()
 
         foreach (var item in group)
         {
-            Console.WriteLine($"{item.FullName}");
+            Console.WriteLine($"\t{item.FullName}");
         }
 
     }
