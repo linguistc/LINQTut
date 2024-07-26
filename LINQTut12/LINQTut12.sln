@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQTut12.Eqaulity", "LINQTut12.Eqaulity\LINQTut12.Eqaulity.csproj", "{BD306FFE-2F2C-4B15-B8AD-E0076FD6989A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{57FA7AF8-0A21-4AE0-A014-995C9A25527F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD306FFE-2F2C-4B15-B8AD-E0076FD6989A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD306FFE-2F2C-4B15-B8AD-E0076FD6989A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD306FFE-2F2C-4B15-B8AD-E0076FD6989A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD306FFE-2F2C-4B15-B8AD-E0076FD6989A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FA7AF8-0A21-4AE0-A014-995C9A25527F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FA7AF8-0A21-4AE0-A014-995C9A25527F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FA7AF8-0A21-4AE0-A014-995C9A25527F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FA7AF8-0A21-4AE0-A014-995C9A25527F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E05FEE82-EC44-4EA3-A44E-A86135ACC05C}
+	EndGlobalSection
+EndGlobal
